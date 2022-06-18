@@ -2,15 +2,28 @@ import React from "react";
 import "./Experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 
-function Experience() {
+function Experience({ translate }) {
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      {translate === "en" ? (
+        <>
+          <h5>What Skills I Have</h5>
+          <h2>My Experience</h2>
+        </>
+      ) : (
+        <>
+          <h5>Que habilidades Tengo</h5>
+          <h2>Mi experiencia</h2>
+        </>
+      )}
 
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>FrontEnd Development</h3>
+          {translate === "en" ? (
+            <h3>Front-End Development</h3>
+          ) : (
+            <h3>Desarrollador Front-End</h3>
+          )}
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
@@ -50,7 +63,7 @@ function Experience() {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Bootstrap</h4>
+                <h4>Bootstrap (less)</h4>
                 <small className="text-light">Experienced</small>
               </div>
             </article>
@@ -72,7 +85,11 @@ function Experience() {
         </div>
         {/* ... */}
         <div className="experience__backend">
-          <h3>BackEnd Development</h3>
+          {translate === "en" ? (
+            <h3>Back-End Development</h3>
+          ) : (
+            <h3>Desarrollador Back-End</h3>
+          )}
           <div className="experience__content">
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />

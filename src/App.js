@@ -9,18 +9,18 @@ import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 function App() {
-  const [translate, setTranslate] = useState("en");
+  const [translate, setTranslate] = useState("es");
   console.log(translate);
 
   return (
     <div className="App">
       <Header setTranslate={setTranslate} translate={translate} />
       <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Contact />
+      <About translate={translate} />
+      <Experience translate={translate} />
+      <Services translate={translate} />
+      <Portfolio translate={translate} />
+      <Contact translate={translate} />
       <Footer />
     </div>
   );

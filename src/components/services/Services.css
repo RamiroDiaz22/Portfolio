@@ -8,7 +8,7 @@
 
 .service {
   background: var(--color-bg-variant);
-  border: 1px solid var(--color-primary);
+  border: 1px solid transparent;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -20,7 +20,7 @@
 
 .service:hover {
   background: transparent;
-  border-color: var(--color-primary-variant);
+  border-color: var(--color-primary);
   cursor: default;
 }
 

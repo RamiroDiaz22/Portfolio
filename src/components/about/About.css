@@ -28,6 +28,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .about__card {
@@ -42,7 +44,6 @@
 .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
-  cursor: pointer;
 }
 
 .about__icon {
