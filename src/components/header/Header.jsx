@@ -3,8 +3,14 @@ import "./Header.css";
 import CTA from "./CTA.jsx";
 import ME from "../../assets/me.png";
 import HeaderSocials from "./HeaderSocials";
+import { HiOutlineTranslate } from "react-icons/hi";
 
-function Header() {
+function Header({ setTranslate, translate }) {
+  function handleClick(e) {
+    e.preventDefault();
+    translate === "en" ? setTranslate("es") : setTranslate("en");
+  }
+
   return (
     <header>
       <div className="container header__container">
@@ -16,6 +22,10 @@ function Header() {
 
         <div className="me">
           <img src={ME} alt="me" />
+        </div>
+
+        <div className="header__icon" onClick={handleClick}>
+          <HiOutlineTranslate className="header__translate" />
         </div>
 
         <a href="#contact" className="scroll__down">
