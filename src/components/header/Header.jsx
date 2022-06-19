@@ -12,7 +12,7 @@ function Header({ setTranslate, translate }) {
   }
 
   return (
-    <header>
+    <header id="home">
       <div className="container header__container">
         {translate === "en" ? <h5>Hello I'm</h5> : <h5>Hola, soy</h5>}
         <h1>Ramiro Diaz Bravo</h1>

@@ -6,11 +6,11 @@
 
 .about__me {
   width: 100%;
-  aspect-ratio: 1/1;
   border-radius: 2rem;
   background: linear-gradient(45deg, var(--color-primary), transparent);
   display: grid;
   place-items: center;
+  margin-bottom: 2rem;
 }
 
 .about__me-image {
@@ -80,6 +80,10 @@
   .about__me {
     width: 50%;
     margin: 2rem auto 4rem;
+  }
+
+  .about__me-delete {
+    display: none;
   }
 
   .about__content p {

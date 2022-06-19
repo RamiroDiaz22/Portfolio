@@ -1,8 +1,8 @@
 import React from "react";
 import "./Portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
+import IMG1 from "../../assets/portfolio.png";
+import IMG2 from "../../assets/portfolio2.png";
+import IMG3 from "../../assets/portfolio3.png";
 
 const data = [
   {
@@ -17,14 +17,14 @@ const data = [
     image: IMG2,
     title: 'FULL STACK - "APP PI DOGS" Henry Bootcamp.',
     github: "https://github.com/RamiroDiaz22/PI-Dogs",
-    demo: "https//github.com",
+    // demo: "https//github.com",
   },
   {
     id: 3,
     image: IMG3,
     title: 'FROND-END - "WEATHER APP" Henry Bootcamp.',
     github: "https://github.com/RamiroDiaz22/WEATHER-APP",
-    demo: "https//github.com",
+    demo: "https://weather-app-db-aa9ce.web.app/",
   },
 ];
 
@@ -60,15 +60,19 @@ function Portfolio({ translate }) {
                     Github
                   </a>
                   {translate === "en" ? (
-                    <a
-                      href={demo}
-                      className="btn btn-primary"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live Demo
-                    </a>
-                  ) : (
+                    demo ? (
+                      <a
+                        href={demo}
+                        className="btn btn-primary"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Live Demo
+                      </a>
+                    ) : (
+                      <></>
+                    )
+                  ) : demo ? (
                     <a
                       href={demo}
                       className="btn btn-primary"
@@ -77,6 +81,8 @@ function Portfolio({ translate }) {
                     >
                       Iniciar Demo
                     </a>
+                  ) : (
+                    <></>
                   )}
                 </div>
               </div>

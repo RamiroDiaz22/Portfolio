@@ -10,7 +10,6 @@ import Footer from "./components/footer/Footer.jsx";
 
 function App() {
   const [translate, setTranslate] = useState("es");
-  console.log(translate);
 
   return (
     <div className="App">

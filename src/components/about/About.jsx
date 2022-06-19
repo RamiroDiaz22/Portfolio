@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
-import ME from "../../assets/me-about.jpg";
+import GIF from "../../assets/GIF.gif";
+import GIF2 from "../../assets/GIF2.gif";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 
@@ -13,9 +14,16 @@ function About({ translate }) {
           <h2>About Me</h2>
 
           <div className="container about__container">
-            <div className="about__me">
-              <div className="about__me-image">
-                <img src={ME} alt="me" />
+            <div>
+              <div className="about__me">
+                <div className="about__me-image">
+                  <img src={GIF} alt="me" />
+                </div>
+              </div>
+              <div className="about__me about__me-delete">
+                <div className="about__me-image">
+                  <img src={GIF2} alt="me" />
+                </div>
               </div>
             </div>
             <div className="about__content">
@@ -29,7 +37,7 @@ function About({ translate }) {
                 <article className="about__card">
                   <FiUsers className="about__icon" />
                   <h5>Projects</h5>
-                  <small>3 Completed</small>
+                  <small>4 Completed</small>
                 </article>
               </div>
 
@@ -62,9 +70,16 @@ function About({ translate }) {
           <h2>Ramiro Diaz</h2>
 
           <div className="container about__container">
-            <div className="about__me">
-              <div className="about__me-image">
-                <img src={ME} alt="me" />
+            <div>
+              <div className="about__me">
+                <div className="about__me-image">
+                  <img src={GIF} alt="me" />
+                </div>
+              </div>
+              <div className="about__me about__me-delete">
+                <div className="about__me-image">
+                  <img src={GIF2} alt="me" />
+                </div>
               </div>
             </div>
             <div className="about__content">
@@ -78,7 +93,7 @@ function About({ translate }) {
                 <article className="about__card">
                   <FiUsers className="about__icon" />
                   <h5>Proyectos</h5>
-                  <small>3 completados</small>
+                  <small>4 completados</small>
                 </article>
               </div>
 

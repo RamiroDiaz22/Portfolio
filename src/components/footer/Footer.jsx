@@ -6,14 +6,14 @@ import { FaGithub, FaInstagram } from "react-icons/fa";
 function Footer({ translate }) {
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <a href="#home" className="footer__logo">
         Diaz Bravo, Ramiro.
       </a>
 
       {translate === "en" ? (
         <ul className="permalinks">
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -34,7 +34,7 @@ function Footer({ translate }) {
       ) : (
         <ul className="permalinks">
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#about">Sobre mi</a>
