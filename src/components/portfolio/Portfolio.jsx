@@ -17,7 +17,7 @@ const data = [
     image: IMG2,
     title: 'FULL STACK - "APP PI DOGS" Henry Bootcamp.',
     github: "https://github.com/RamiroDiaz22/PI-Dogs",
-    // demo: "https//github.com",
+    demo: "https://dogs-app-phi.vercel.app/",
   },
   {
     id: 3,
@@ -60,19 +60,15 @@ function Portfolio({ translate }) {
                     Github
                   </a>
                   {translate === "en" ? (
-                    demo ? (
-                      <a
-                        href={demo}
-                        className="btn btn-primary"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Live Demo
-                      </a>
-                    ) : (
-                      <></>
-                    )
-                  ) : demo ? (
+                    <a
+                      href={demo}
+                      className="btn btn-primary"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Live Demo
+                    </a>
+                  ) : (
                     <a
                       href={demo}
                       className="btn btn-primary"
@@ -81,8 +77,6 @@ function Portfolio({ translate }) {
                     >
                       Iniciar Demo
                     </a>
-                  ) : (
-                    <></>
                   )}
                 </div>
               </div>
