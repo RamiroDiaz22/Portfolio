@@ -83,4 +83,8 @@
   .service__head {
     border-radius: 0 0 2rem 2rem;
   }
+
+  .service__list-text{
+    width: 90%;
+  }
 }

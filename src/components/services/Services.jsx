@@ -20,23 +20,23 @@ function Services({ translate }) {
               <ul className="service__list">
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Design and operation of Web Pages.</p>
+                  <p classNama="service__list-text">Design and operation of Web Pages.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Optimal performance.</p>
+                  <p classNama="service__list-text">Optimal performance.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Maintenance service and problem solving.</p>
+                  <p classNama="service__list-text">Maintenance service and problem solving.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Updates and Improvements.</p>
+                  <p classNama="service__list-text">Updates and Improvements.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Personalized attention.</p>
+                  <p classNama="service__list-text">Personalized attention.</p>
                 </li>
               </ul>
             </article>
@@ -58,11 +58,11 @@ function Services({ translate }) {
               <ul className="service__list">
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Diseño y funcionamiento de Páginas Web.</p>
+                  <p classNama="service__list-text">Diseño y funcionamiento de Páginas Web.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Rendimiento óptimo.</p>
+                  <p classNama="service__list-text">Rendimiento óptimo.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
@@ -70,11 +70,11 @@ function Services({ translate }) {
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Actualizaciones y Mejoras.</p>
+                  <p classNama="service__list-text">Actualizaciones y Mejoras.</p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p>Atención personalizada.</p>
+                  <p classNama="service__list-text">Atención personalizada.</p>
                 </li>
               </ul>
             </article>
