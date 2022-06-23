@@ -99,6 +99,10 @@ header {
     width: 1.5rem !important;
     height: 1.5rem !important;
   }
+
+  .header__socials::after {
+    height: 3rem;
+  }
 }
 
 /* ===================================== MEDIA QUERIES (MEDIUM DEVICES) =================================== */
