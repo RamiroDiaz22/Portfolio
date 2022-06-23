@@ -89,6 +89,8 @@ header {
   font-size: 0.9rem;
 }
 
+/* ============================== LARGE QUERIES (LARGUE DEVICES) ==================================== */
+
 @media screen and (min-width: 1680px) {
   .scroll__down {
     font-weight: 400;
