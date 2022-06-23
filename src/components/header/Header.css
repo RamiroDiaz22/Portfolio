@@ -89,7 +89,7 @@ header {
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (min-width: 1680px) {
   .scroll__down {
     font-weight: 400;
     font-size: 1.2rem;
