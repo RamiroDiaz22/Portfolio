@@ -37,20 +37,6 @@ function Nav() {
     if (position5 < 150 && position5 > -150) {
       setActiveNav("#contact");
     }
-
-    // position1 === 0 ? (
-    //   setActiveNav("#home")
-    // ) : position2 === 0 ? (
-    //   setActiveNav("#about")
-    // ) : position3 === 0 ? (
-    //   setActiveNav("#experience")
-    // ) : position4 === 0 ? (
-    //   setActiveNav("#services")
-    // ) : position5 === 0 ? (
-    //   setActiveNav("#contact")
-    // ) : (
-    //   <></>
-    // );
   });
 
   return (
