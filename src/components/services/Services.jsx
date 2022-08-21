@@ -50,7 +50,7 @@ function Services({ translate }) {
         </>
       ) : (
         <>
-          <h5>Mis</h5>
+          <h5>Lo que ofrezco</h5>
           <h2>Servicios</h2>
           <div className="container services__container">
             <article className="service">
@@ -74,7 +74,9 @@ function Services({ translate }) {
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />
-                  <p className="service__list-text">Servicio de mantenimiento y solución de problemas.</p>
+                  <p className="service__list-text">
+                    Servicio de mantenimiento y solución de problemas.
+                  </p>
                 </li>
                 <li>
                   <BiCheck className="service__list-icon" />

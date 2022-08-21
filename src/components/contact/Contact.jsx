@@ -12,7 +12,7 @@ function Contact({ translate }) {
 
     emailjs
       .sendForm(
-        "service_k36vjih",
+        "service_fm7qsv1",
         "template_s3jy7ar",
         form.current,
         "24NMMI_Gt5lcFqTfT"
@@ -52,16 +52,40 @@ function Contact({ translate }) {
             </div>
             {/* END OF CONTACT OPTIONS */}
             <form ref={form} onSubmit={sendEmail}>
-              <input type="text" name="name" placeholder="Your ful Name" />
-              <input type="email" name="email" placeholder="Your Email" />
+              <input
+                required
+                type="text"
+                name="name"
+                title={
+                  translate === "en" ? "Your full Name" : "Nombre completo"
+                }
+                placeholder={
+                  translate === "en" ? "Your full Name" : "Nombre completo"
+                }
+              />
+              <input
+                required
+                type="email"
+                name="email"
+                title={translate === "en" ? "Your Email" : "Email"}
+                placeholder={translate === "en" ? "Your Email" : "Email"}
+              />
               <textarea
+                required
                 name="message"
                 rows="7"
-                placeholder="Your Message"
+                title={translate === "en" ? "Your Message" : "Tu mensaje"}
+                placeholder={translate === "en" ? "Your Message" : "Tu mensaje"}
               ></textarea>
-              <button type="submit" className="btn btn-primary">
-                Send Message
-              </button>
+              {translate === "en" ? (
+                <button type="submit" className="btn btn-primary">
+                  Send Message
+                </button>
+              ) : (
+                <button type="submit" className="btn btn-primary">
+                  Enviar Mensaje
+                </button>
+              )}
             </form>
           </div>
         </>
