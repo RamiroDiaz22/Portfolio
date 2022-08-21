@@ -29,7 +29,10 @@ function Header({ setTranslate, translate }) {
         </div>
 
         <div className="header__icon" onClick={handleClick}>
-          <HiOutlineTranslate className="header__translate" />
+          <HiOutlineTranslate
+            className="header__translate"
+            title={translate === "en" ? "Español" : "English"}
+          />
         </div>
 
         <a href="#contact" className="scroll__down">

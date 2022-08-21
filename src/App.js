@@ -9,7 +9,7 @@ import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 function App() {
-  const [translate, setTranslate] = useState("es");
+  const [translate, setTranslate] = useState("en");
 
   return (
     <div className="App">
